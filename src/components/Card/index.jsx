@@ -16,17 +16,17 @@ export function Card(props) {
     }
 
     function notRemember() {
-        props.setCounter(props.counter+1);
+        props.setCount(props.count+1);
         setSelectCard(3);
     }
 
     function almostRemember() {
-        props.setCounter(props.counter+1);
+        props.setCount(props.count+1);
         setSelectCard(4);
     }
 
     function zap() {
-        props.setCounter(props.counter+1);
+        props.setCount(props.count+1);
         setSelectCard(5);
     }
 

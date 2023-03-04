@@ -1,7 +1,8 @@
+import './reset.css';
+import { Body } from "./AppStyle";
 import { Cards } from "./components/Cards";
 import { Logo } from "./components/Logo";
 import { Footer } from "./components/Footer";
-import GlobalStyle from './GlobalStyle';
 import { useState } from "react";
 
 function App() {
@@ -19,12 +20,13 @@ function App() {
   ];
 
   return (
-    <>
+    <Body>
       <Logo />
+      <div className='space'>
       <Cards cards={cards} count={count} setCount={setCount} />
-      <Footer />
-      <GlobalStyle />
-    </>
+      </div>
+      <Footer count={count} cards={cards} />
+    </Body>
   );
 }
 
